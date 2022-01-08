@@ -34,7 +34,7 @@ In this exercise, you will:
    ```powershell
    $RGName = "ContosoResourceGroup"
    #create resource group if it doesnt exist
-   New-AzResourceGroup -Name $RGName -Location East US
+   New-AzResourceGroup -Name $RGName -Location EastUS
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.json
    ```
 
@@ -97,7 +97,7 @@ In this exercise, you will:
    |                 | Select inbound ports                                         | RDP (3389)                                |
    | Disks           | No changes required                                          |                                           |
    | Networking      | Virtual network                                              | ManufacturingVnet                         |
-   |                 | Subnet                                                       | ManufacturingSystemSubnet (10.40.40.0/24) |
+   |                 | Subnet                                                       | ManufacturingSystemSubnet (10.30.10.0/24) |
    |                 | Public IP                                                    | (new) ManufacturingTestVM-ip              |
    |                 | NIC network security group                                   | Basic                                     |
    |                 | Public inbound ports                                         | Allow selected ports                      |
